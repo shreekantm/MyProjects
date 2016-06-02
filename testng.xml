@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sequential Test Execution">
+  <test name="Smoke Tests" >  
+  <groups>
+      <run>
+      <include name="Regression" />
+      </run>
+   </groups>
+    <classes>
+      <class name="testCases.Tests"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Sequential Test Execution" duration-ms="21184" started-at="2016-06-02T09:51:54Z" finished-at="2016-06-02T09:52:16Z">
+    <groups>
+      <group name="Regression">
+        <method signature="Tests.testCheckout()[pri:2, instance:testCases.Tests@51efea79]" name="testCheckout" class="testCases.Tests"/>
+        <method signature="Tests.testLogin()[pri:0, instance:testCases.Tests@51efea79]" name="testLogin" class="testCases.Tests"/>
+        <method signature="Tests.testLogout()[pri:3, instance:testCases.Tests@51efea79]" name="testLogout" class="testCases.Tests"/>
+        <method signature="Tests.testProductSearch()[pri:1, instance:testCases.Tests@51efea79]" name="testProductSearch" class="testCases.Tests"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="Tests.testLogin()[pri:0, instance:testCases.Tests@51efea79]" name="testLogin" class="testCases.Tests"/>
+        <method signature="Tests.testLogout()[pri:3, instance:testCases.Tests@51efea79]" name="testLogout" class="testCases.Tests"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Smoke Tests" duration-ms="21184" started-at="2016-06-02T09:51:54Z" finished-at="2016-06-02T09:52:16Z">
+      <class name="testCases.Tests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:testCases.Tests@51efea79]" name="setUp" is-config="true" duration-ms="9286" started-at="2016-06-02T15:21:54Z" finished-at="2016-06-02T15:22:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testLogin()[pri:0, instance:testCases.Tests@51efea79]" name="testLogin" duration-ms="5305" started-at="2016-06-02T15:22:04Z" finished-at="2016-06-02T15:22:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testProductSearch()[pri:1, instance:testCases.Tests@51efea79]" name="testProductSearch" duration-ms="1670" started-at="2016-06-02T15:22:09Z" finished-at="2016-06-02T15:22:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testProductSearch -->
+        <test-method status="PASS" signature="testCheckout()[pri:2, instance:testCases.Tests@51efea79]" name="testCheckout" duration-ms="3916" started-at="2016-06-02T15:22:11Z" finished-at="2016-06-02T15:22:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckout -->
+        <test-method status="PASS" signature="testLogout()[pri:3, instance:testCases.Tests@51efea79]" name="testLogout" duration-ms="913" started-at="2016-06-02T15:22:15Z" finished-at="2016-06-02T15:22:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.Tests@51efea79]" name="tearDown" is-config="true" duration-ms="24" started-at="2016-06-02T15:22:16Z" finished-at="2016-06-02T15:22:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.Tests -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- Sequential Test Execution -->
+</testng-results>
