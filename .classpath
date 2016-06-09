@@ -18,5 +18,8 @@
 	<classpathentry kind="lib" path="C:/Users/shreekantm/Desktop/Selenium Tests/ApachePOI 3.14/poi-ooxml-3.14.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shreekantm/Desktop/Selenium Tests/ApachePOI 3.14/poi-ooxml-schemas-3.14.jar"/>
 	<classpathentry kind="lib" path="C:/Users/shreekantm/Desktop/Selenium Tests/ApachePOI 3.14/poi-scratchpad-3.14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shreekantm/Desktop/Selenium Tests/guice-3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shreekantm/Desktop/Selenium Tests/reportng-1.1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/shreekantm/Desktop/Selenium Tests/velocity-dep-1.4.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
