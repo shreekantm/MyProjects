@@ -4,13 +4,13 @@
   <test name="Smoke Tests(failed)">
     <groups>
       <run>
-        <include name="Regression"/>
+        <include name="CurrentTest"/>
       </run>
     </groups>
     <classes>
       <class name="testCases.Tests">
         <methods>
-          <include name="testCheckout"/>
+          <include name="testBYOC"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>

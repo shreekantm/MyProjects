@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Sequential_Test_Execution">
-              <span class="suite-name border-passed">Sequential Test Execution</span>
+              <span class="suite-name border-failed">Sequential Test Execution</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Sequential_Test_Execution">
-                    <span>2 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,36 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Sequential_Test_Execution" class="hide-methods passed suite-Sequential_Test_Execution"> (hide)</a> <!-- hide-methods passed suite-Sequential_Test_Execution -->
-                      <a href="#" panel-name="suite-Sequential_Test_Execution" class="show-methods passed suite-Sequential_Test_Execution"> (show)</a> <!-- show-methods passed suite-Sequential_Test_Execution -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Sequential_Test_Execution" class="hide-methods failed suite-Sequential_Test_Execution"> (hide)</a> <!-- hide-methods failed suite-Sequential_Test_Execution -->
+                      <a href="#" panel-name="suite-Sequential_Test_Execution" class="show-methods failed suite-Sequential_Test_Execution"> (show)</a> <!-- show-methods failed suite-Sequential_Test_Execution -->
                     </span>
-                    <div class="method-list-content passed suite-Sequential_Test_Execution">
+                    <div class="method-list-content failed suite-Sequential_Test_Execution">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sequential_Test_Execution" title="testCases.Tests" hash-for-method="testCheckout">testCheckout</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Sequential_Test_Execution" title="testCases.Tests" hash-for-method="testBYOC">testBYOC</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sequential_Test_Execution" title="testCases.Tests" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sequential_Test_Execution" title="testCases.Tests" hash-for-method="testLogout">testLogout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Sequential_Test_Execution" title="testCases.Tests" hash-for-method="testProductSearch">testProductSearch</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Sequential_Test_Execution -->
+                    </div> <!-- method-list-content failed suite-Sequential_Test_Execution -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,42 +117,27 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Sequential_Test_Execution" class="panel Sequential_Test_Execution">
-          <div class="suite-Sequential_Test_Execution-class-passed">
+          <div class="suite-Sequential_Test_Execution-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">testCases.Tests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCheckout">
-                  </a> <!-- testCheckout -->
-                  <span class="method-name">testCheckout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLogin">
-                  </a> <!-- testLogin -->
-                  <span class="method-name">testLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLogout">
-                  </a> <!-- testLogout -->
-                  <span class="method-name">testLogout</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testProductSearch">
-                  </a> <!-- testProductSearch -->
-                  <span class="method-name">testProductSearch</span>
+                  <a name="testBYOC">
+                  </a> <!-- testBYOC -->
+                  <span class="method-name">testBYOC</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [$1.200.00] but found [$1,200.00]
+	at operations.UIOperation.perform(UIOperation.java:64)
+	at operations.ExecuteStep.ExecuteTestStep(ExecuteStep.java:28)
+	at testCases.Tests.testBYOC(Tests.java:66)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Sequential_Test_Execution-class-passed -->
+          </div> <!-- suite-Sequential_Test_Execution-class-failed -->
         </div> <!-- panel Sequential_Test_Execution -->
         <div panel-name="test-xml-Sequential_Test_Execution" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -181,7 +151,7 @@
   &lt;test name=&quot;Smoke Tests&quot;&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;Regression&quot;/&gt;
+        &lt;include name=&quot;CurrentTest&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -210,22 +180,18 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
+              <span class="test-group-name">CurrentTest</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testBYOC</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
               <span class="test-group-name">Regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">testCheckout</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">testLogin</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">testLogout</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">testProductSearch</span>
+                <span class="method-in-group-name">testBYOC</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -233,11 +199,7 @@
               <span class="test-group-name">Smoke</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">testLogin</span>
-                <br/>
-              </div> <!-- method-in-group -->
-              <div class="method-in-group">
-                <span class="method-in-group-name">testLogout</span>
+                <span class="method-in-group-name">testBYOC</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -257,23 +219,11 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testLogin')
+data.setCell(0, 1, 'testBYOC')
 data.setCell(0, 2, 'testCases.Tests')
-data.setCell(0, 3, 5305);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCheckout')
-data.setCell(1, 2, 'testCases.Tests')
-data.setCell(1, 3, 3916);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testProductSearch')
-data.setCell(2, 2, 'testCases.Tests')
-data.setCell(2, 3, 1670);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testLogout')
-data.setCell(3, 2, 'testCases.Tests')
-data.setCell(3, 3, 913);
+data.setCell(0, 3, 11555);
 window.suiteTableData['Sequential_Test_Execution']= { tableData: data, tableDiv: 'times-div-Sequential_Test_Execution'}
 return data;
 }
@@ -293,9 +243,22 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Sequential_Test_Execution" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.Tests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">testLogout</span>
+                <br/>
+                <span class="ignored-method-name">testCheckout</span>
+                <br/>
+                <span class="ignored-method-name">testLogin</span>
+                <br/>
+                <span class="ignored-method-name">testProductSearch</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Sequential_Test_Execution" class="panel">
@@ -310,24 +273,14 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">testLogin</span>
-                <span class="method-start">9304 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testProductSearch</span>
-                <span class="method-start">14631 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testCheckout</span>
-                <span class="method-start">16304 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testLogout</span>
-                <span class="method-start">20224 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testBYOC</span>
+                <span class="method-start">18367 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21143 ms</span>
+                <span class="method-start">29948 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

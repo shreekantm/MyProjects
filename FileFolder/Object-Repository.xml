@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Object-Repository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Pages name="Login">
+		<Object type="class" value="ico-login" data="">loginLink</Object>
+		<Object type="id" value="Email" data="shreekantm@cybage.com">username</Object>
+		<Object type="id" value="Password" data="123456">password</Object>
+		<Object type="xpath" value="//input[contains(@class,'login')]" data="">loginButton</Object>
+		<Object type="linkText" value="shreekantm@cybage.com" data="shreekantm@cybage.com">accountName</Object>
+		<Object type="linkText" value="Log out" data="">logoutLink</Object>
+	</Pages>
+	<Pages name="Search">
+		<Object type="id" value="small-searchterms" data="Cooking">producrsearchTextbox</Object>
+		<Object type="css" value="input.button-1.search-box-button" data="">productSearchButton</Object>
+		<Object type="css" value="input.button-2.product-box-add-to-cart-button" data="">addCartbutton</Object>
+	</Pages>
+	<Pages name="Cart">
+		<Object type="xpath" value="//li[@id='topcartlink']/a/span[contains(text(),'cart')]" data="">shoppingCart</Object>
+		<Object type="xpath" value="//button[contains(@class,'checkout')]" data="">checkOut</Object>
+	</Pages>
+	<Pages name="BYOC">
+		<Object type="linkText" value="Build your own computer" data="">buildYourOwnComputer</Object>
+		<Object type="xpath" value="//div[@class='attributes']/dl/dd[1]/select" data="2.2 GHz Intel Pentium Dual-Core E2200">processor</Object>
+		<Object type="xpath" value="//div[@class='attributes']/dl/dd[2]/select" data="4GB [+$20.00]">ram</Object>
+		<Object type="xpath" value="//li/label[contains(text(),'400 GB')]//preceding-sibling::input" data="">hdd</Object>
+		<Object type="xpath" value="//li/label[contains(text(),'Vista Premium')]//preceding-sibling::input" data="">os</Object>
+		<Object type="xpath" value="//li/label[contains(text(),'Microsoft Office')]//preceding-sibling::input" data="">software1</Object>
+		<Object type="xpath" value="//li/label[contains(text(),'Acrobat Reader')]//preceding-sibling::input" data="">software2</Object>
+		<Object type="xpath" value=".//*[@id='product-details-form']/div/div[2]/div[1]/div/div/div[3]/div/span" data="$1.200.00">price</Object>
+		<Object type="xpath" value="//input[contains(@class,'add-to-cart-button')]" data="">addToCart</Object>
+	</Pages>
+</Object-Repository>

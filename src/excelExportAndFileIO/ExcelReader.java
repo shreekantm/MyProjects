@@ -17,10 +17,6 @@ public class ExcelReader {
 		// Create an object of FileInputStream class to read excel file
 		FileInputStream inputStream = new FileInputStream(file);
 
-		// Find the file extension by spliting file name in substing and getting
-		// only extension name
-//		String fileExtensionName = fileName.substring(fileName.indexOf("."));
-
 		Workbook workbook = new XSSFWorkbook(inputStream);
 
 		// Read sheet inside the workbook by its name

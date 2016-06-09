@@ -4,7 +4,7 @@
   <test name="Smoke Tests" >  
   <groups>
       <run>
-      <include name="Regression" />
+      <include name="CurrentTest" />
       </run>
    </groups>
     <classes>
